@@ -38,39 +38,75 @@
     padding-left: 20px;
 }
 
-.heart-icon {
+.title_for_Bastille {
+    font-family: 'Shrikhand', cursive;
     padding-left: 30px;
+    padding-right: 100px;
+    font-size: x-large;
+    
+}
+
+.Bastille_heart_icon {
+    padding-left: 60px;
     padding-right: 20px;
     margin-left: 100px;
     font-size: xx-large;
 }
 
-.heart-icon-1 {
+.title_for_Le_Gourman {
+    font-family: 'Shrikhand', cursive;
+    padding-left: 30px;
+    font-size: x-large;
+}
+
+.heart_for_Le_Gourman {
+    padding-left: 200px;
+    font-size: xx-large;
+}
+
+.title_for_Enchanted {
+    font-family: 'Shrikhand', cursive;
+    padding-left: 30px;
+    padding-right: 100px;
+    font-size: x-large;
+}
+
+.Enchanted_heart_icon {
     font-size: xx-large;
     margin-left: 30px;
 }
 
-.title__ {
-    display: none;
-}
-
-.title-1 {
+.title_for_Full_Plate {
     font-family: 'Shrikhand', cursive;
     padding-left: 30px;
-    padding-right: 70px;
+    padding-right: 100px;
     font-size: x-large;
+}
+
+.FullPlate_heart_icon {
+    padding-left: 60px;
+    padding-right: 20px;
+    margin-left: 100px;
+    font-size: xx-large;
+}
+
+
+.title__ {
+    display: none;
 }
 
 .image img {
     position: absolute;
     width: 100%;
     height: 1715px;
+    object-fit: cover;
 }
 
 .image-1 img {
     position: absolute;
     width: 100%;
-    height: 1812px;
+    height: 1715px;
+    object-fit: cover;
 }
 
 .big-card {
@@ -324,102 +360,63 @@ ul {
 
 @media only screen and (max-width: 320px) {
 
-
-
-    .header-title {
-        display: flex;
-        justify-content: center;
-        padding-right: 40px;
-    }
-
-    .arrow-tag {
-        /* font-size: xx-large; */
-        /* padding-top: 50px; */
-        margin-left: 40px;
-    }
-
     .header-logo {
-        height: 35px;
-        padding-left: 0px;
-        margin-top: 20px;
-        margin-bottom: 6px;
-        margin-left: 40px;
-    }
-    
-    .big-card {
-        position: relative;
-        width: 130%;
-        /* height: 84%; */
+        height: 32px;
+        padding-left: 30px;
+        margin-top: 26px;
+        margin-bottom: 0px;
     }
 
     .image img {
         position: absolute;
-        width: 99%;
-        height: 260px;
+        height: 250px;
+        width: 100%;
+        object-fit: contain;
     }
 
 
     .card {
         position: absolute;
         margin-top: 220px;
-        margin-left: 0px;
         width: 100%;
         height: 1400px;
         background-color: rgb(238, 238, 238);
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         transition-duration: .8s;
+        margin-left: 0px;
     }
 
-    .sub-title {
-        display: flex;
-        flex-direction: row;
-        margin-top: 23px;
-        /* padding-left: 126px; */
-    }
 
     .title-1 {
         font-family: 'Shrikhand', cursive;
-        padding-left: 30px;
-        padding-right: 0px;
+        padding-left: 0px;
+        padding-right: 100px;
         font-size: x-large;
     }
 
     .heart-icon {
-        padding-left: 25px;
-        padding-right: 20px;
-        margin-left: 100px;
-        font-size: x-large;
+        padding-left: 40px;
+        padding-right: 0;
+        margin-left: 0;
+        font-size: xx-large;
     }
-
 
     .entree-menu {
         position: relative;
         margin-top: 300px;
-        /* margin-left: 40px; */
+        margin-left: 20px;
     }
 
     .entree {
         font-family: 'Roboto', sans-serif;
-        font-size: x-large;
-        padding-left: 10px;
+        font-size: medium;
+        padding-left: 0px;
         display: flex;
         flex-direction: row;
         margin-bottom: 14px;
         margin-left: 0px;
-    }
-
-    .main-menu {
-        position: relative;
-        margin-top: 50px;
-        /* margin-left: 40px; */
-    }
-
-
-    .desserts-menu {
-        position: relative;
-        margin-top: 50px;
-        /* margin-left: 40px; */
+        padding-top: 50px;
     }
 
     .overlay-container {
@@ -428,33 +425,20 @@ ul {
         margin-left: 0px;
     }
 
-    .btn-edit {
-        position: relative;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        height: 55px;
+    .food-card {
+        animation: fadeIn 1000ms;
+        background-color: #fff;
         font-size: 14px;
-        width: 170px;
-        color: white;
-        background-image: linear-gradient(to right, #f327f0, #b72feb);
-        transition-duration: 0.8s;
-        cursor: pointer;
-        border-radius: 40px;
-        box-shadow: 2px 2px 10px grey;
-        margin-left: 120px;
+        line-height: 25px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 15px #cacaca;
+        margin: -10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 10px;
+        width: 290px;
+        z-index: auto;
     }
-
-    .footer {
-        position: absolute;
-        cursor: pointer;
-        font-family: 'Roboto', sans-serif;
-        width: 130%;
-        /* margin-top: 1650px; */
-        background-color: rgb(68, 68, 68);
-        height: 200px;
-        margin-left: 0px;
-    }
-
 
    
 }
